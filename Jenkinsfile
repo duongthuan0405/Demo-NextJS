@@ -9,6 +9,12 @@ pipeline {
                sh 'echo Preview 2'
             }
         }
+        stage('Preview v2') {
+            steps {
+               sh 'echo Preview v2 1'
+               sh 'echo Preview v2 2'
+            }
+        }
 
         stage('Checkout') {
             when {
