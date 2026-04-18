@@ -3,6 +3,13 @@ pipeline {
 
     stages {
 
+        stage('Preview') {
+            steps {
+               sh 'echo Preview 1'
+               sh 'echo Preview 2'
+            }
+        }
+
         stage('Checkout') {
             when {
                 anyOf {
